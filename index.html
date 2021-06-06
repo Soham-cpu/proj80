@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Guest List</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <div id="divGive">
+            <h2>Guest List</h2>
+            <span>
+                <input id="guests_names_entered" type="text" placeholder="Enter guest's names">
+                <button onclick="add_guest()">Submit</button>
+            </span>
+        </div>
+        <hr>
+        <div id="display_names_with_commas"></div>
+        <hr>
+        <div id="div_diplay_with_button_and_name">
+            <h2>Guest List</h2>
+            <button onclick="show_names_without_commas()">Show</button>
+            <div id="display_names_without_commas"></div>
+        </div>
+        <hr>
+        <div id="sorted_list_div">
+            <button onclick="sorting()">Sorted List</button>
+            <div id="sorted_display_names_without_commas">
+            </div>
+        </div>
+        <hr>
+        <div id="search_div">
+            <span>
+                <input type="text" id="search_input">
+                <button onclick="search_guest()">Search</button>
+            </span>
+            <p id="name_found_times">
+        </div>
+    </center>
+</body>
+
+</html>
